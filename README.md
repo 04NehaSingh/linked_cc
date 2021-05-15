@@ -1,4 +1,7 @@
 ## Linkedin Cruise Control docker image
+This is a docker image that will run Cruise Control. Dependencies needed:
+1. Kafka fully operation cluster with prometheus node and jmx expoter enabled.
+2. Prometheus server for metrics.
 
 ## Pull image:
     docker pull 11nehas/cruise-control:latest
@@ -39,3 +42,4 @@ For using prometheus as metric sampler class cruisecontrol.properties option to 
 webserver.ui.diskpath=./cruise-control-ui
 
   Add /cruise-control-ui/ui-config.csv if you want to adjust web ui config.
+
